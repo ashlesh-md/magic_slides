@@ -26,6 +26,7 @@ Key packages used in the project:
 
 Follow the steps below to run the **Magic Slides** Flutter project locally.
 [Demo Video](https://drive.google.com/file/d/1K0oji0wtNdQ9UMR9Ks-EGw5oK0zrzZVO/view?usp=sharing)
+[Android APK](https://drive.google.com/file/d/1tqOC-ta-kyWQ-C2NEwUaoYIKGcMhOv4Z/view?usp=sharing)
 
 ### 1. Clone the Repository
 ```bash
