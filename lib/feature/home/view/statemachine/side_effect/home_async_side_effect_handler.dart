@@ -10,12 +10,15 @@ class HomeAsyncSideEffectHandler
     extends AsyncSideEffectHandler<HomeEvent, HomeAsyncSideEffect> {
   final LogoutUsecase _logoutUsecase;
   final GeneratePresentationUsecase _generatePresentationUsecase;
+  final PresentationRepository _presentationRepository;
 
   HomeAsyncSideEffectHandler({
     required LogoutUsecase logoutUsecase,
     required GeneratePresentationUsecase generatePresentationUsecase,
+    required PresentationRepository presentationRepository,
   }) : _logoutUsecase = logoutUsecase,
-       _generatePresentationUsecase = generatePresentationUsecase;
+       _generatePresentationUsecase = generatePresentationUsecase,
+       _presentationRepository = presentationRepository;
 
   @override
   Future<void> handleSideEffect(
@@ -36,14 +39,20 @@ class HomeAsyncSideEffectHandler
         {
           dispatchEvent(GenerationStated());
           try {
-            final generatedPresentationModel = await _generatePresentationUsecase.execute(
-              topic: sideEffect.topic,
-              settings: sideEffect.settings,
-            );
+            final generatedPresentationModel =
+                await _generatePresentationUsecase.execute(
+                  topic: sideEffect.topic,
+                  settings: sideEffect.settings,
+                );
             dispatchEvent(GenerationFinished(generatedPresentationModel));
           } on ApiException catch (exception) {
             dispatchEvent(GenerationFailed(exception.message));
           }
+        }
+      case UpdateAssetId _:
+        {
+          await _presentationRepository.updateAssetId(sideEffect.assetId);
+          dispatchEvent(AssetIdUpdated());
         }
     }
   }

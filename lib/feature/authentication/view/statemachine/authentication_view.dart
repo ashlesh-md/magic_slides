@@ -36,16 +36,18 @@ class AuthenticationView
   ) {
     return Padding(
       padding: const EdgeInsets.all(16),
-      child: Column(
-        children: [
-          const SizedBox(height: 48),
-          Text('Magic Slides', style: CustomTextStyles.m3DisplaySmall),
-          const SizedBox(height: 48),
-
-          state.showSignInView
-              ? _buildSignInView(state, dispatchEvent)
-              : _buildSignUpView(state, dispatchEvent),
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SizedBox(height: 48),
+            Text('Magic Slides', style: CustomTextStyles.m3DisplaySmall),
+            const SizedBox(height: 48),
+        
+            state.showSignInView
+                ? _buildSignInView(state, dispatchEvent)
+                : _buildSignUpView(state, dispatchEvent),
+          ],
+        ),
       ),
     );
   }
@@ -111,14 +113,14 @@ class AuthenticationView
             obscureText: true,
             hint: 'Confirm Password',
           ),
-
+            
           _authButton("Sign Up", () {
             final status = state.signUpFormKey.currentState?.validate();
             if (status ?? false) {
               dispatchEvent(SignUpClicked());
             }
           }),
-
+            
           _authToggle(
             leading: "Already have an account? ",
             action: "Sign In",

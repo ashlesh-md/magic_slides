@@ -15,6 +15,11 @@ class GeneratePresentation extends HomeAsyncSideEffect {
   GeneratePresentation({required this.topic, required this.settings});
 }
 
+class UpdateAssetId extends HomeAsyncSideEffect {
+  String assetId;
+  UpdateAssetId(this.assetId);
+}
+
 sealed class HomeUISideEffect extends UISideEffect {}
 
 class ShowPresentationSettingsBottomSheet extends HomeUISideEffect {
@@ -38,4 +43,8 @@ class ShowRefreshPopup extends HomeUISideEffect {
 class ShareFile extends HomeUISideEffect {
   File file;
   ShareFile(this.file);
+}
+
+class ShowAssetIdUpdateBottomSheet extends HomeUISideEffect {
+  ShowAssetIdUpdateBottomSheet();
 }

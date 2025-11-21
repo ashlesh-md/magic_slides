@@ -11,4 +11,6 @@ abstract class PresentationRepository {
     required PresentationSettingsModel settings,
   });
   String get accessId;
+  String get assetIdIdentificationKey;
+  Future<void> updateAssetId(String assetId);
 }

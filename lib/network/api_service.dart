@@ -22,18 +22,27 @@ class ApiService {
       );
 
       if (response.statusCode == 200) {
-        final json = await rootBundle.loadString('assets/dummy_response.json');
-        return Success(
-          // PresentationResponse.fromJson(jsonDecode(response.body)),
-          PresentationResponse.fromJson(jsonDecode(json))
-        );
-      } else {
-        log(response.body);
-        return Failure('Something went wrong');
+        // final json = await rootBundle.loadString('assets/dummy_response.json');
+        // return Success(PresentationResponse.fromJson(jsonDecode(json)));
+        
+        final jsonData = jsonDecode(response.body);
+        final data = jsonData['data'];
+
+        if (data != null && data['success'] == true) {
+          return Success(PresentationResponse.fromJson(jsonData));
+        }
+
+        final message = data != null && data['message'] != null
+            ? data['message'].toString()
+            : "Something went wrong";
+
+        return Failure(message);
       }
-    } on SocketException catch (_) {
+
+      return Failure('Something went wrong');
+    } on SocketException {
       return Failure('Check your internet connection');
-    } catch (_) {
+    } catch (e) {
       return Failure('Something went wrong');
     }
   }

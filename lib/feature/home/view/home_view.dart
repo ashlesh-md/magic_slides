@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
 import 'package:magic_slides/core/injection/injection.dart';
 import 'package:magic_slides/feature/home/domain/model/presentation_setting_model.dart';
+import 'package:magic_slides/feature/home/view/widgets/ask_asset_id_bottom_sheet.dart';
 import 'package:magic_slides/feature/home/view/widgets/presentations_settings_bottom_sheet.dart';
 import 'package:magic_slides/feature/home/view/statemachine/analytics/home_analytics_handler.dart';
 import 'package:magic_slides/feature/home/view/statemachine/side_effect/home_async_side_effect_handler.dart';
@@ -40,6 +41,11 @@ class HomeView
           ),
         IconButton(
           iconSize: 20,
+          onPressed: () => dispatchEvent(AssetClicked()),
+          icon: Icon(Icons.pinch),
+        ),
+        IconButton(
+          iconSize: 20,
           onPressed: () => dispatchEvent(LogoutClicked()),
           icon: Icon(Icons.logout),
         ),
@@ -57,16 +63,20 @@ class HomeView
     }
 
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.symmetric(horizontal: 16.0),
       child: SingleChildScrollView(
         child: Form(
           key: state.topicFormKey,
           child: Column(
             children: [
+              const SizedBox(height: 16),
               AppTextField(
                 controller: state.topicController,
                 hint: 'Enter your topic',
                 autofocus: true,
+                onTapOutside: () {
+                  FocusManager.instance.primaryFocus?.unfocus();
+                },
               ),
               SettingsSummaryView(
                 model: state.presentationSettingsModel,
@@ -83,7 +93,7 @@ class HomeView
                 },
                 child: Text('Generate Presentation'),
               ),
-              SizedBox(height: 24)
+              SizedBox(height: 24),
             ],
           ),
         ),
@@ -205,6 +215,16 @@ class HomeView
         {
           await AppUtils.shareFile(files: [sideEffect.file]);
         }
+      case ShowAssetIdUpdateBottomSheet _:
+        {
+          showModalBottomSheet(
+            isScrollControlled: true,
+            context: context,
+            builder: (context) {
+              return AskAssetIdBottomSheet(onSubmit: (assetId) => dispatchEvent(UpdateAssetIdClicked(assetId)));
+            },
+          );
+        }
     }
   }
 
@@ -217,6 +237,7 @@ class HomeView
       HomeAsyncSideEffectHandler(
         logoutUsecase: mainModule(),
         generatePresentationUsecase: mainModule(),
+        presentationRepository: mainModule(),
       ),
       HomeAnalyticsHandler(),
     );

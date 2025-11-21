@@ -16,6 +16,7 @@ class AppTextField extends StatefulWidget {
   final FormFieldValidator<String>? validator;
   final VoidCallback? onTap;
   final bool? autofocus;
+  final VoidCallback? onTapOutside;
 
   const AppTextField({
     super.key,
@@ -34,6 +35,7 @@ class AppTextField extends StatefulWidget {
     this.validator,
     this.onTap,
     this.autofocus,
+    this.onTapOutside,
   });
 
   @override
@@ -117,6 +119,9 @@ class _AppTextFieldState extends State<AppTextField> {
       onChanged: widget.onChanged,
       validator: _validateInput,
       onTap: widget.onTap,
+      onTapOutside: (event) {
+        widget.onTapOutside?.call();
+      },
       maxLength: 64,
       buildCounter: (context,
               {required currentLength, required isFocused, required maxLength}) =>

@@ -8,7 +8,10 @@ import 'package:magic_slides/feature/home/domain/usecase/logout_usecase.dart';
 class HomeInjection {
   void inject() {
     mainModule.registerFactory<PresentationRepository>(
-      () => PresentationRepositoryImpl(apiService: mainModule()),
+      () => PresentationRepositoryImpl(
+        apiService: mainModule(),
+        appPreferences: mainModule(),
+      ),
     );
     mainModule.registerFactory<LogoutUsecase>(
       () => LogoutUsecase(authenticationRepository: authenticationModule()),

@@ -89,6 +89,18 @@ class HomeEventHandler
       {
         return Next(uiSideEffect: ShareFile(event.file));
       }
+      case AssetClicked _:
+      {
+        return Next(uiSideEffect: ShowAssetIdUpdateBottomSheet());
+      }
+      case UpdateAssetIdClicked _:
+      {
+        return Next(asyncSideEffect: UpdateAssetId(event.assetId));
+      }
+      case AssetIdUpdated _:
+      {
+        return Next(uiSideEffect: ShowSnackbar('Updated'));
+      }
     }
   }
 }

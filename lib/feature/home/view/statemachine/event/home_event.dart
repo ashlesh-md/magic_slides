@@ -63,3 +63,16 @@ class DownloadFileClicked extends HomeEvent {
   File file;
   DownloadFileClicked(this.file) : super("");
 }
+
+class AssetClicked extends HomeEvent {
+  AssetClicked() : super("");
+}
+
+class UpdateAssetIdClicked extends HomeEvent {
+  String assetId;
+  UpdateAssetIdClicked(this.assetId) : super("");
+}
+
+class AssetIdUpdated extends HomeEvent {
+  AssetIdUpdated() : super("");
+}

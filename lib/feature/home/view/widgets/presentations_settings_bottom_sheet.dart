@@ -169,6 +169,8 @@ class _PresentationSettingsBottomSheetState
                 onPressed: () => Navigator.pop(context, model),
                 child: const Text("Apply Settings"),
               ),
+
+              const SizedBox(height: 20),
             ],
           ),
         );
