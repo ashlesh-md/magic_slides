@@ -1,7 +1,6 @@
 import 'dart:convert';
-import 'dart:developer';
 import 'dart:io';
-import 'package:flutter/services.dart';
+// import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:magic_slides/network/outcome.dart';
 import 'package:magic_slides/network/requests/presentation_request.dart';
@@ -24,7 +23,7 @@ class ApiService {
       if (response.statusCode == 200) {
         // final json = await rootBundle.loadString('assets/dummy_response.json');
         // return Success(PresentationResponse.fromJson(jsonDecode(json)));
-        
+
         final jsonData = jsonDecode(response.body);
         final data = jsonData['data'];
 

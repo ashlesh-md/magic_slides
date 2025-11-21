@@ -73,9 +73,9 @@ class HomeEventHandler
       case GenerationFailed _:
         {
           return Next(
-            state: state
-              ..updateGenerationStatus(false),
-            uiSideEffect: ShowSnackbar(event.reason));
+            state: state..updateGenerationStatus(false),
+            uiSideEffect: ShowSnackbar(event.reason),
+          );
         }
       case RefreshClicked _:
         {
@@ -86,21 +86,21 @@ class HomeEventHandler
           return Next(state: state..reset());
         }
       case DownloadFileClicked _:
-      {
-        return Next(uiSideEffect: ShareFile(event.file));
-      }
+        {
+          return Next(uiSideEffect: ShareFile(event.file));
+        }
       case AssetClicked _:
-      {
-        return Next(uiSideEffect: ShowAssetIdUpdateBottomSheet());
-      }
-      case UpdateAssetIdClicked _:
-      {
-        return Next(asyncSideEffect: UpdateAssetId(event.assetId));
-      }
-      case AssetIdUpdated _:
-      {
-        return Next(uiSideEffect: ShowSnackbar('Updated'));
-      }
+        {
+          return Next(uiSideEffect: ShowAssetIdUpdateBottomSheet());
+        }
+      case UpdateAccessIdClicked _:
+        {
+          return Next(asyncSideEffect: UpdateAccessId(event.accessId));
+        }
+      case AccessIdUpdated _:
+        {
+          return Next(uiSideEffect: ShowSnackbar('Updated'));
+        }
     }
   }
 }

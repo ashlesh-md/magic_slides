@@ -30,7 +30,7 @@ class PresentationRepositoryImpl implements PresentationRepository {
     final user = Supabase.instance.client.auth.currentUser;
     final email = user?.email ?? '';
     final storedAssetId = await _appPreferences.getString(
-      assetIdIdentificationKey,
+      accessIdIdentificationKey,
     );
 
     final Outcome<PresentationResponse> response = await _apiService
@@ -51,10 +51,10 @@ class PresentationRepositoryImpl implements PresentationRepository {
   }
 
   @override
-  String get assetIdIdentificationKey => 'ASSET_ID_IDENTIFICATION_KEY';
+  String get accessIdIdentificationKey => 'ACCESS_ID_IDENTIFICATION_KEY';
 
   @override
-  Future<void> updateAssetId(String assetId) async {
-    await _appPreferences.setString(assetIdIdentificationKey, assetId);
+  Future<void> updateAccessId(String assetId) async {
+    await _appPreferences.setString(accessIdIdentificationKey, assetId);
   }
 }

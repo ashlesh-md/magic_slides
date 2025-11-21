@@ -15,9 +15,9 @@ class GeneratePresentation extends HomeAsyncSideEffect {
   GeneratePresentation({required this.topic, required this.settings});
 }
 
-class UpdateAssetId extends HomeAsyncSideEffect {
-  String assetId;
-  UpdateAssetId(this.assetId);
+class UpdateAccessId extends HomeAsyncSideEffect {
+  String accessId;
+  UpdateAccessId(this.accessId);
 }
 
 sealed class HomeUISideEffect extends UISideEffect {}

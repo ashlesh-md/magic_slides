@@ -41,16 +41,9 @@ class AppUtils {
     required List<File> files,
     String? fileName,
   }) {
-     final rect = Platform.isIOS
-        ? const Rect.fromLTWH(
-            0, 0, 200, 200) 
-        : null;
+    final rect = Platform.isIOS ? const Rect.fromLTWH(0, 0, 200, 200) : null;
     return Share.shareXFiles(
-      files
-          .map(
-            (e) => XFile(e.path),
-          )
-          .toList(),
+      files.map((e) => XFile(e.path)).toList(),
       text: Platform.isIOS ? null : "$fileName - Sent via SuperFam",
       sharePositionOrigin: rect,
     );

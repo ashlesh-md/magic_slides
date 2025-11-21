@@ -68,11 +68,11 @@ class AssetClicked extends HomeEvent {
   AssetClicked() : super("");
 }
 
-class UpdateAssetIdClicked extends HomeEvent {
-  String assetId;
-  UpdateAssetIdClicked(this.assetId) : super("");
+class UpdateAccessIdClicked extends HomeEvent {
+  String accessId;
+  UpdateAccessIdClicked(this.accessId) : super("");
 }
 
-class AssetIdUpdated extends HomeEvent {
-  AssetIdUpdated() : super("");
+class AccessIdUpdated extends HomeEvent {
+  AccessIdUpdated() : super("");
 }

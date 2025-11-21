@@ -1,19 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:magic_slides/utils/widgets/app_text_field.dart';
 
-class AskAssetIdBottomSheet extends StatefulWidget {
+class AskAccessIdBottomSheet extends StatefulWidget {
   final Function(String assetId) onSubmit;
 
-  const AskAssetIdBottomSheet({
-    super.key,
-    required this.onSubmit,
-  });
+  const AskAccessIdBottomSheet({super.key, required this.onSubmit});
 
   @override
-  State<AskAssetIdBottomSheet> createState() => _AskAssetIdBottomSheetState();
+  State<AskAccessIdBottomSheet> createState() => _AskAccessIdBottomSheetState();
 }
 
-class _AskAssetIdBottomSheetState extends State<AskAssetIdBottomSheet> {
+class _AskAccessIdBottomSheetState extends State<AskAccessIdBottomSheet> {
   final TextEditingController _controller = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 

@@ -49,10 +49,10 @@ class HomeAsyncSideEffectHandler
             dispatchEvent(GenerationFailed(exception.message));
           }
         }
-      case UpdateAssetId _:
+      case UpdateAccessId _:
         {
-          await _presentationRepository.updateAssetId(sideEffect.assetId);
-          dispatchEvent(AssetIdUpdated());
+          await _presentationRepository.updateAccessId(sideEffect.accessId);
+          dispatchEvent(AccessIdUpdated());
         }
     }
   }

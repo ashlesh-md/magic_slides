@@ -86,7 +86,11 @@ class _AppTextFieldState extends State<AppTextField> {
 
       final hasSpecial = RegExp(r'[!@#\$&*~%^(),.?":{}|<>]').hasMatch(text);
 
-      if (text.length < 6 || !hasUpper || !hasLower || !hasNumber || !hasSpecial) {
+      if (text.length < 6 ||
+          !hasUpper ||
+          !hasLower ||
+          !hasNumber ||
+          !hasSpecial) {
         return "Password must contain:\n"
             "- Uppercase letter\n"
             "- Lowercase letter\n"
@@ -123,9 +127,13 @@ class _AppTextFieldState extends State<AppTextField> {
         widget.onTapOutside?.call();
       },
       maxLength: 64,
-      buildCounter: (context,
-              {required currentLength, required isFocused, required maxLength}) =>
-          const SizedBox(),
+      buildCounter:
+          (
+            context, {
+            required currentLength,
+            required isFocused,
+            required maxLength,
+          }) => const SizedBox(),
       decoration: InputDecoration(
         labelText: widget.label,
         hintText: widget.hint,
@@ -141,8 +149,11 @@ class _AppTextFieldState extends State<AppTextField> {
         disabledBorder: _getBorder(context),
         focusedBorder: _getBorder(context, color: scheme.primary, width: 0.5),
         errorBorder: _getBorder(context, color: scheme.error, width: 0.5),
-        focusedErrorBorder:
-            _getBorder(context, color: scheme.error, width: 0.5),
+        focusedErrorBorder: _getBorder(
+          context,
+          color: scheme.error,
+          width: 0.5,
+        ),
       ),
     );
   }

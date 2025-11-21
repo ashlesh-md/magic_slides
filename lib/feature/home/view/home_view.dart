@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
 import 'package:magic_slides/core/injection/injection.dart';
 import 'package:magic_slides/feature/home/domain/model/presentation_setting_model.dart';
-import 'package:magic_slides/feature/home/view/widgets/ask_asset_id_bottom_sheet.dart';
+import 'package:magic_slides/feature/home/view/widgets/ask_access_id_bottom_sheet.dart';
 import 'package:magic_slides/feature/home/view/widgets/presentations_settings_bottom_sheet.dart';
 import 'package:magic_slides/feature/home/view/statemachine/analytics/home_analytics_handler.dart';
 import 'package:magic_slides/feature/home/view/statemachine/side_effect/home_async_side_effect_handler.dart';
@@ -221,7 +221,10 @@ class HomeView
             isScrollControlled: true,
             context: context,
             builder: (context) {
-              return AskAssetIdBottomSheet(onSubmit: (assetId) => dispatchEvent(UpdateAssetIdClicked(assetId)));
+              return AskAccessIdBottomSheet(
+                onSubmit: (assetId) =>
+                    dispatchEvent(UpdateAccessIdClicked(assetId)),
+              );
             },
           );
         }
