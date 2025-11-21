@@ -1,0 +1,489 @@
+{
+    "status": "success",
+    "message": "Presentation generated successfully",
+    "data": {
+        "url": "https://djgurnpwsdoqjscwqbsj.supabase.co/storage/v1/object/public/presentations/AIRevolutionizingHealthcareToday5de77bc166925905.pptx",
+        "json": {
+            "presentationTitle": "AI Revolutionizing Healthcare Today",
+            "presentationSubtitle": "Unlocking the potential of Artificial Intelligence in Healthcare for better outcomes.",
+            "imageSearch": "https://images.pexels.com/photos/5128078/pexels-photo-5128078.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+            "slides": [
+                {
+                    "title": "Discovering AI in Healthcare",
+                    "subtitle": "An inspiring look at the basics",
+                    "imageSearch": "https://images.pexels.com/photos/8098272/pexels-photo-8098272.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+                    "content": [
+                        {
+                            "title": "The Core Concept",
+                            "description": "Artificial Intelligence in Healthcare brings smart technology to help with medical decisions, making processes faster and more accurate for everyday health needs."
+                        },
+                        {
+                            "title": "Why It Matters",
+                            "description": "Artificial Intelligence in Healthcare changes how we approach patient care by offering tools that analyze information quickly, leading to improved daily health management."
+                        },
+                        {
+                            "title": "Starting Point",
+                            "description": "Artificial Intelligence in Healthcare begins with simple ideas like using data to spot patterns, which supports better planning in routine medical activities."
+                        },
+                        {
+                            "title": "Initial Impact",
+                            "description": "Artificial Intelligence in Healthcare shows early signs of transforming standard practices by integrating tech into common healthcare routines for enhanced efficiency."
+                        }
+                    ]
+                },
+                {
+                    "title": "Benefits of AI Integration",
+                    "subtitle": "How it enhances healthcare efficiency",
+                    "imageSearch": "https://images.pexels.com/photos/9769125/pexels-photo-9769125.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+                    "content": [
+                        {
+                            "title": "Efficiency Gains",
+                            "description": "Artificial Intelligence in Healthcare speeds up tasks by automating routine checks, allowing more time for personalized patient interactions in daily settings."
+                        },
+                        {
+                            "title": "Accuracy Improvements",
+                            "description": "Artificial Intelligence in Healthcare reduces errors through precise data analysis, ensuring safer and more reliable outcomes in everyday medical procedures."
+                        },
+                        {
+                            "title": "Cost Savings",
+                            "description": "Artificial Intelligence in Healthcare lowers expenses by optimizing resources, making advanced care more accessible and affordable for regular health services."
+                        },
+                        {
+                            "title": "Innovation Drive",
+                            "description": "Artificial Intelligence in Healthcare sparks new ideas by combining tech with medicine, fostering ongoing advancements in standard healthcare practices."
+                        }
+                    ]
+                },
+                {
+                    "title": "AI in Daily Diagnostics",
+                    "subtitle": "Spotting issues with smart tools",
+                    "imageSearch": "https://images.pexels.com/photos/9628839/pexels-photo-9628839.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+                    "content": [
+                        {
+                            "title": "Early Detection",
+                            "description": "Artificial Intelligence in Healthcare uses algorithms to identify potential problems early, helping prevent complications in routine health monitoring."
+                        },
+                        {
+                            "title": "Image Analysis",
+                            "description": "Artificial Intelligence in Healthcare processes scans quickly for better accuracy, supporting faster decisions in common diagnostic routines."
+                        },
+                        {
+                            "title": "Data Patterns",
+                            "description": "Artificial Intelligence in Healthcare examines patient data to reveal trends, aiding in proactive management of everyday health conditions."
+                        },
+                        {
+                            "title": "Support for Doctors",
+                            "description": "Artificial Intelligence in Healthcare assists professionals by providing insights from vast information, enhancing standard diagnostic workflows."
+                        }
+                    ]
+                },
+                {
+                    "title": "Treatment Enhancements",
+                    "subtitle": "AI guiding better care plans",
+                    "imageSearch": "https://images.pexels.com/photos/5207015/pexels-photo-5207015.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+                    "content": [
+                        {
+                            "title": "Personalized Plans",
+                            "description": "Artificial Intelligence in Healthcare tailors treatments based on individual data, leading to more effective recovery strategies in daily practice."
+                        },
+                        {
+                            "title": "Drug Development",
+                            "description": "Artificial Intelligence in Healthcare accelerates the creation of new medicines by analyzing compounds, streamlining routine pharmaceutical processes."
+                        },
+                        {
+                            "title": "Monitoring Progress",
+                            "description": "Artificial Intelligence in Healthcare tracks patient responses in real-time, ensuring adjustments for optimal outcomes in standard care routines."
+                        },
+                        {
+                            "title": "Therapy Optimization",
+                            "description": "Artificial Intelligence in Healthcare refines therapy methods through predictive models, improving overall effectiveness in everyday treatments."
+                        }
+                    ]
+                },
+                {
+                    "title": "Challenges to Overcome",
+                    "subtitle": "Navigating hurdles with AI",
+                    "imageSearch": "https://images.pexels.com/photos/5614108/pexels-photo-5614108.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+                    "content": [
+                        {
+                            "title": "Data Privacy",
+                            "description": "Artificial Intelligence in Healthcare faces issues with protecting sensitive information, requiring strong measures to maintain trust in daily operations."
+                        },
+                        {
+                            "title": "Integration Barriers",
+                            "description": "Artificial Intelligence in Healthcare encounters difficulties in blending with existing systems, needing smooth adaptations for effective use."
+                        },
+                        {
+                            "title": "Skill Gaps",
+                            "description": "Artificial Intelligence in Healthcare demands training for users, addressing knowledge shortages to fully utilize its potential in routines."
+                        },
+                        {
+                            "title": "Ethical Concerns",
+                            "description": "Artificial Intelligence in Healthcare raises questions on fairness and bias, promoting guidelines to ensure equitable application in practice."
+                        }
+                    ]
+                },
+                {
+                    "title": "Future Possibilities",
+                    "subtitle": "AI's potential ahead",
+                    "imageSearch": "https://images.pexels.com/photos/6153343/pexels-photo-6153343.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+                    "content": [
+                        {
+                            "title": "Expanded Access",
+                            "description": "Artificial Intelligence in Healthcare could make services available to more people globally, bridging gaps in remote and underserved areas."
+                        },
+                        {
+                            "title": "Advanced Research",
+                            "description": "Artificial Intelligence in Healthcare might drive faster discoveries in science, leading to breakthroughs that transform future medical fields."
+                        },
+                        {
+                            "title": "Wearable Tech",
+                            "description": "Artificial Intelligence in Healthcare may integrate with devices for continuous monitoring, enhancing personal health tracking in daily life."
+                        },
+                        {
+                            "title": "Global Collaboration",
+                            "description": "Artificial Intelligence in Healthcare fosters partnerships across borders, accelerating innovations that benefit worldwide health systems."
+                        }
+                    ]
+                },
+                {
+                    "title": "Real-World Applications",
+                    "subtitle": "AI in action today",
+                    "imageSearch": "https://images.pexels.com/photos/8098272/pexels-photo-8098272.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+                    "content": [
+                        {
+                            "title": "Hospital Use",
+                            "description": "Artificial Intelligence in Healthcare operates in facilities to streamline operations, improving patient flow and resource management daily."
+                        },
+                        {
+                            "title": "Remote Care",
+                            "description": "Artificial Intelligence in Healthcare enables virtual consultations, making healthcare more convenient and accessible for people at home."
+                        },
+                        {
+                            "title": "Research Aid",
+                            "description": "Artificial Intelligence in Healthcare assists in studies by processing large datasets, speeding up findings for ongoing medical advancements."
+                        },
+                        {
+                            "title": "Patient Engagement",
+                            "description": "Artificial Intelligence in Healthcare encourages active involvement through apps, helping individuals manage their health more effectively."
+                        }
+                    ]
+                },
+                {
+                    "title": "The Human Touch",
+                    "subtitle": "Balancing AI with empathy",
+                    "imageSearch": "https://images.pexels.com/photos/5722164/pexels-photo-5722164.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+                    "content": [
+                        {
+                            "title": "Augmenting Skills",
+                            "description": "Artificial Intelligence in Healthcare supports human experts by handling repetitive tasks, allowing more focus on compassionate care."
+                        },
+                        {
+                            "title": "Emotional Support",
+                            "description": "Artificial Intelligence in Healthcare complements personal interactions, ensuring technology enhances rather than replaces human connections."
+                        },
+                        {
+                            "title": "Training Enhancement",
+                            "description": "Artificial Intelligence in Healthcare provides tools for learning, helping professionals deliver better, more empathetic services."
+                        },
+                        {
+                            "title": "Holistic Approach",
+                            "description": "Artificial Intelligence in Healthcare integrates with human insights to offer comprehensive care, addressing both physical and emotional needs."
+                        }
+                    ]
+                },
+                {
+                    "title": "Global Influence",
+                    "subtitle": "AI's worldwide healthcare role",
+                    "imageSearch": "https://images.pexels.com/photos/4031822/pexels-photo-4031822.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+                    "content": [
+                        {
+                            "title": "Economic Impact",
+                            "description": "Artificial Intelligence in Healthcare boosts economies by cutting costs and increasing efficiency, supporting sustainable health systems globally."
+                        },
+                        {
+                            "title": "Policy Changes",
+                            "description": "Artificial Intelligence in Healthcare influences regulations to promote safe use, shaping policies that guide international health practices."
+                        },
+                        {
+                            "title": "Equity Promotion",
+                            "description": "Artificial Intelligence in Healthcare works towards equal access, helping reduce disparities in care across different regions and communities."
+                        },
+                        {
+                            "title": "Innovation Waves",
+                            "description": "Artificial Intelligence in Healthcare sparks ongoing developments, driving waves of progress that benefit health sectors around the world."
+                        }
+                    ]
+                },
+                {
+                    "title": "Thank You",
+                    "subtitle": "Grateful for your attention",
+                    "imageSearch": "https://images.pexels.com/photos/5981508/pexels-photo-5981508.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+                    "content": [
+                        {
+                            "title": "Appreciation Note",
+                            "description": "Artificial Intelligence in Healthcare has vast potential, and we thank you for joining this exploration, hoping it inspires your own journey in this field."
+                        },
+                        {
+                            "title": "Final Thoughts",
+                            "description": "As we wrap up on Artificial Intelligence in Healthcare, remember its power to transform lives—thank you for your engagement and interest."
+                        },
+                        {
+                            "title": "Stay Connected",
+                            "description": "Thank you for being part of this discussion on Artificial Intelligence in Healthcare; let's continue learning and applying these ideas together."
+                        },
+                        {
+                            "title": "Closing Words",
+                            "description": "We appreciate your time exploring Artificial Intelligence in Healthcare—thank you, and may this knowledge lead to positive changes in your work."
+                        }
+                    ]
+                }
+            ]
+        },
+        "original_json": {
+            "presentationTitle": "AI Revolutionizing Healthcare Today",
+            "presentationSubtitle": "Unlocking the potential of Artificial Intelligence in Healthcare for better outcomes.",
+            "imageSearch": "Artificial Intelligence Healthcare",
+            "slides": [
+                {
+                    "title": "Discovering AI in Healthcare",
+                    "subtitle": "An inspiring look at the basics",
+                    "imageSearch": "AI Healthcare Basics",
+                    "content": [
+                        {
+                            "title": "The Core Concept",
+                            "description": "Artificial Intelligence in Healthcare brings smart technology to help with medical decisions, making processes faster and more accurate for everyday health needs."
+                        },
+                        {
+                            "title": "Why It Matters",
+                            "description": "Artificial Intelligence in Healthcare changes how we approach patient care by offering tools that analyze information quickly, leading to improved daily health management."
+                        },
+                        {
+                            "title": "Starting Point",
+                            "description": "Artificial Intelligence in Healthcare begins with simple ideas like using data to spot patterns, which supports better planning in routine medical activities."
+                        },
+                        {
+                            "title": "Initial Impact",
+                            "description": "Artificial Intelligence in Healthcare shows early signs of transforming standard practices by integrating tech into common healthcare routines for enhanced efficiency."
+                        }
+                    ]
+                },
+                {
+                    "title": "Benefits of AI Integration",
+                    "subtitle": "How it enhances healthcare efficiency",
+                    "imageSearch": "AI Healthcare Benefits",
+                    "content": [
+                        {
+                            "title": "Efficiency Gains",
+                            "description": "Artificial Intelligence in Healthcare speeds up tasks by automating routine checks, allowing more time for personalized patient interactions in daily settings."
+                        },
+                        {
+                            "title": "Accuracy Improvements",
+                            "description": "Artificial Intelligence in Healthcare reduces errors through precise data analysis, ensuring safer and more reliable outcomes in everyday medical procedures."
+                        },
+                        {
+                            "title": "Cost Savings",
+                            "description": "Artificial Intelligence in Healthcare lowers expenses by optimizing resources, making advanced care more accessible and affordable for regular health services."
+                        },
+                        {
+                            "title": "Innovation Drive",
+                            "description": "Artificial Intelligence in Healthcare sparks new ideas by combining tech with medicine, fostering ongoing advancements in standard healthcare practices."
+                        }
+                    ]
+                },
+                {
+                    "title": "AI in Daily Diagnostics",
+                    "subtitle": "Spotting issues with smart tools",
+                    "imageSearch": "AI Healthcare Diagnostics",
+                    "content": [
+                        {
+                            "title": "Early Detection",
+                            "description": "Artificial Intelligence in Healthcare uses algorithms to identify potential problems early, helping prevent complications in routine health monitoring."
+                        },
+                        {
+                            "title": "Image Analysis",
+                            "description": "Artificial Intelligence in Healthcare processes scans quickly for better accuracy, supporting faster decisions in common diagnostic routines."
+                        },
+                        {
+                            "title": "Data Patterns",
+                            "description": "Artificial Intelligence in Healthcare examines patient data to reveal trends, aiding in proactive management of everyday health conditions."
+                        },
+                        {
+                            "title": "Support for Doctors",
+                            "description": "Artificial Intelligence in Healthcare assists professionals by providing insights from vast information, enhancing standard diagnostic workflows."
+                        }
+                    ]
+                },
+                {
+                    "title": "Treatment Enhancements",
+                    "subtitle": "AI guiding better care plans",
+                    "imageSearch": "AI Healthcare Treatment",
+                    "content": [
+                        {
+                            "title": "Personalized Plans",
+                            "description": "Artificial Intelligence in Healthcare tailors treatments based on individual data, leading to more effective recovery strategies in daily practice."
+                        },
+                        {
+                            "title": "Drug Development",
+                            "description": "Artificial Intelligence in Healthcare accelerates the creation of new medicines by analyzing compounds, streamlining routine pharmaceutical processes."
+                        },
+                        {
+                            "title": "Monitoring Progress",
+                            "description": "Artificial Intelligence in Healthcare tracks patient responses in real-time, ensuring adjustments for optimal outcomes in standard care routines."
+                        },
+                        {
+                            "title": "Therapy Optimization",
+                            "description": "Artificial Intelligence in Healthcare refines therapy methods through predictive models, improving overall effectiveness in everyday treatments."
+                        }
+                    ]
+                },
+                {
+                    "title": "Challenges to Overcome",
+                    "subtitle": "Navigating hurdles with AI",
+                    "imageSearch": "AI Healthcare Challenges",
+                    "content": [
+                        {
+                            "title": "Data Privacy",
+                            "description": "Artificial Intelligence in Healthcare faces issues with protecting sensitive information, requiring strong measures to maintain trust in daily operations."
+                        },
+                        {
+                            "title": "Integration Barriers",
+                            "description": "Artificial Intelligence in Healthcare encounters difficulties in blending with existing systems, needing smooth adaptations for effective use."
+                        },
+                        {
+                            "title": "Skill Gaps",
+                            "description": "Artificial Intelligence in Healthcare demands training for users, addressing knowledge shortages to fully utilize its potential in routines."
+                        },
+                        {
+                            "title": "Ethical Concerns",
+                            "description": "Artificial Intelligence in Healthcare raises questions on fairness and bias, promoting guidelines to ensure equitable application in practice."
+                        }
+                    ]
+                },
+                {
+                    "title": "Future Possibilities",
+                    "subtitle": "AI's potential ahead",
+                    "imageSearch": "AI Healthcare Future",
+                    "content": [
+                        {
+                            "title": "Expanded Access",
+                            "description": "Artificial Intelligence in Healthcare could make services available to more people globally, bridging gaps in remote and underserved areas."
+                        },
+                        {
+                            "title": "Advanced Research",
+                            "description": "Artificial Intelligence in Healthcare might drive faster discoveries in science, leading to breakthroughs that transform future medical fields."
+                        },
+                        {
+                            "title": "Wearable Tech",
+                            "description": "Artificial Intelligence in Healthcare may integrate with devices for continuous monitoring, enhancing personal health tracking in daily life."
+                        },
+                        {
+                            "title": "Global Collaboration",
+                            "description": "Artificial Intelligence in Healthcare fosters partnerships across borders, accelerating innovations that benefit worldwide health systems."
+                        }
+                    ]
+                },
+                {
+                    "title": "Real-World Applications",
+                    "subtitle": "AI in action today",
+                    "imageSearch": "AI Healthcare Applications",
+                    "content": [
+                        {
+                            "title": "Hospital Use",
+                            "description": "Artificial Intelligence in Healthcare operates in facilities to streamline operations, improving patient flow and resource management daily."
+                        },
+                        {
+                            "title": "Remote Care",
+                            "description": "Artificial Intelligence in Healthcare enables virtual consultations, making healthcare more convenient and accessible for people at home."
+                        },
+                        {
+                            "title": "Research Aid",
+                            "description": "Artificial Intelligence in Healthcare assists in studies by processing large datasets, speeding up findings for ongoing medical advancements."
+                        },
+                        {
+                            "title": "Patient Engagement",
+                            "description": "Artificial Intelligence in Healthcare encourages active involvement through apps, helping individuals manage their health more effectively."
+                        }
+                    ]
+                },
+                {
+                    "title": "The Human Touch",
+                    "subtitle": "Balancing AI with empathy",
+                    "imageSearch": "AI Healthcare Human Aspect",
+                    "content": [
+                        {
+                            "title": "Augmenting Skills",
+                            "description": "Artificial Intelligence in Healthcare supports human experts by handling repetitive tasks, allowing more focus on compassionate care."
+                        },
+                        {
+                            "title": "Emotional Support",
+                            "description": "Artificial Intelligence in Healthcare complements personal interactions, ensuring technology enhances rather than replaces human connections."
+                        },
+                        {
+                            "title": "Training Enhancement",
+                            "description": "Artificial Intelligence in Healthcare provides tools for learning, helping professionals deliver better, more empathetic services."
+                        },
+                        {
+                            "title": "Holistic Approach",
+                            "description": "Artificial Intelligence in Healthcare integrates with human insights to offer comprehensive care, addressing both physical and emotional needs."
+                        }
+                    ]
+                },
+                {
+                    "title": "Global Influence",
+                    "subtitle": "AI's worldwide healthcare role",
+                    "imageSearch": "AI Healthcare Global",
+                    "content": [
+                        {
+                            "title": "Economic Impact",
+                            "description": "Artificial Intelligence in Healthcare boosts economies by cutting costs and increasing efficiency, supporting sustainable health systems globally."
+                        },
+                        {
+                            "title": "Policy Changes",
+                            "description": "Artificial Intelligence in Healthcare influences regulations to promote safe use, shaping policies that guide international health practices."
+                        },
+                        {
+                            "title": "Equity Promotion",
+                            "description": "Artificial Intelligence in Healthcare works towards equal access, helping reduce disparities in care across different regions and communities."
+                        },
+                        {
+                            "title": "Innovation Waves",
+                            "description": "Artificial Intelligence in Healthcare sparks ongoing developments, driving waves of progress that benefit health sectors around the world."
+                        }
+                    ]
+                },
+                {
+                    "title": "Thank You",
+                    "subtitle": "Grateful for your attention",
+                    "imageSearch": "Thank You Presentation",
+                    "content": [
+                        {
+                            "title": "Appreciation Note",
+                            "description": "Artificial Intelligence in Healthcare has vast potential, and we thank you for joining this exploration, hoping it inspires your own journey in this field."
+                        },
+                        {
+                            "title": "Final Thoughts",
+                            "description": "As we wrap up on Artificial Intelligence in Healthcare, remember its power to transform lives—thank you for your engagement and interest."
+                        },
+                        {
+                            "title": "Stay Connected",
+                            "description": "Thank you for being part of this discussion on Artificial Intelligence in Healthcare; let's continue learning and applying these ideas together."
+                        },
+                        {
+                            "title": "Closing Words",
+                            "description": "We appreciate your time exploring Artificial Intelligence in Healthcare—thank you, and may this knowledge lead to positive changes in your work."
+                        }
+                    ]
+                }
+            ]
+        },
+        "pptId": "AIRevolutionizingHealthcareToday5de77bc166925905",
+        "UserMessage": "\n You are an expert world-class presentation content writer, creating professional and high-quality content. \n\n You are healthcare professionals.\n\n As you are an assistant of creating presentation. Respond only using the following content: 'Artificial Intelligence in Healthcare, ' . And Create a presentation with 10 slides.\n\n Follow the following instructions before creating content for the presentation:\n - Keep the tone inspiring and start with a catchy hook.\n - Include all the important points and details in the presentation.\n - The presentation should be informative, engaging, and unique.\n - Use easy-to-understand frequent words in English.\n - Avoid sounding like AI.\n - \"Use only the provided content.\"\n - \"Do not generate new information.\"\n - \"Refer strictly to the input data.\"\n - **Strictly avoid repetition across the slides.**\n\n I need the response in JSON format. Do not ask any questions; just answer.",
+        "openAICallTime": 28230,
+        "tokenUsed": 3633,
+        "pdfUrl": "https://djgurnpwsdoqjscwqbsj.supabase.co/storage/v1/object/public/pdfs/AIRevolutionizingHealthcareToday_sK9dBKgT.pdf",
+        "model": "grok-3-mini-fast",
+        "customStartGenerationTime": "2025-11-20T14:29:39.063Z",
+        "success": true
+    }
+}

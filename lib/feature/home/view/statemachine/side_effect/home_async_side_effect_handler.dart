@@ -1,0 +1,53 @@
+import 'package:magic_slides/core/exceptions/api_exception.dart';
+import 'package:magic_slides/feature/home/domain/repository/presentation_repository.dart';
+import 'package:magic_slides/feature/home/domain/usecase/generate_presentation_usecase.dart';
+import 'package:magic_slides/feature/home/domain/usecase/logout_usecase.dart';
+import 'package:magic_slides/feature/home/view/statemachine/event/home_event.dart';
+import 'package:magic_slides/feature/home/view/statemachine/side_effect/home_side_effect.dart';
+import 'package:statemachine/statemachine.dart';
+
+class HomeAsyncSideEffectHandler
+    extends AsyncSideEffectHandler<HomeEvent, HomeAsyncSideEffect> {
+  final LogoutUsecase _logoutUsecase;
+  final GeneratePresentationUsecase _generatePresentationUsecase;
+
+  HomeAsyncSideEffectHandler({
+    required LogoutUsecase logoutUsecase,
+    required GeneratePresentationUsecase generatePresentationUsecase,
+  }) : _logoutUsecase = logoutUsecase,
+       _generatePresentationUsecase = generatePresentationUsecase;
+
+  @override
+  Future<void> handleSideEffect(
+    HomeAsyncSideEffect sideEffect,
+    DispatchEvent<HomeEvent> dispatchEvent,
+  ) async {
+    switch (sideEffect) {
+      case Logout _:
+        {
+          final status = await _logoutUsecase.execute();
+          if (status) {
+            dispatchEvent(LogoutSuccess());
+          } else {
+            dispatchEvent(LogoutFailed());
+          }
+        }
+      case GeneratePresentation _:
+        {
+          dispatchEvent(GenerationStated());
+          try {
+            final generatedPresentationModel = await _generatePresentationUsecase.execute(
+              topic: sideEffect.topic,
+              settings: sideEffect.settings,
+            );
+            dispatchEvent(GenerationFinished(generatedPresentationModel));
+          } on ApiException catch (exception) {
+            dispatchEvent(GenerationFailed(exception.message));
+          }
+        }
+    }
+  }
+
+  @override
+  void dispose() {}
+}

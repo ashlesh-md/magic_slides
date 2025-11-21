@@ -1,0 +1,39 @@
+# Generated files
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.idea/
+.vscode/
+build/
+*.iml
+*.rc
+
+# Platform-specific build files and directories
+android/app/build/
+android/.gradle/
+android/local.properties
+ios/Runner.xcworkspace/
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/App.framework/
+ios/Flutter/Flutter.framework/
+ios/Flutter/Flutter.podspec
+ios/Flutter/ephemeral/
+macos/build/
+macos/Pods/
+linux/build/
+windows/build/
+
+# IDE-specific files
+*.iml
+.DS_Store
+.vscode/
+.idea/
+
+# Other common files to ignore
+coverage/
+*.log
+*.lock
+*.env
