@@ -45,10 +45,4 @@ class HomeState extends BaseState {
     _topicController.dispose();
     super.dispose();
   }
-
-  @override
-  void addListener(VoidCallback listener) {
-    _topicController.addListener(listener);
-    super.addListener(listener);
-  }
 }
